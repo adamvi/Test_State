@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="author" content="Vistat" />
+    <meta name="citation_title" content="The Bean Machine and the Central Limit Theorem">
+    <meta name="citation_author" content="Lijia Yu">
+    <meta name="citation_publication_date" content="2013/04/13">
+    <meta name="citation_journal_title" content="Vistat">
+    <title>The Bean Machine and the Central Limit Theorem | Vistat</title>
+
+    <link href="/feed/" rel="alternate" title="Vistat" type="application/atom+xml" />
+    <link rel="stylesheet" href="/assets/themes/dinky/css/styles.css">
+    <link rel="stylesheet" href="/assets/themes/dinky/css/pygment_trac.css">
+    <script src="/assets/themes/dinky/js/scale.fix.js"></script>
+    
+    <link rel="stylesheet" href="/assets/themes/dinky/css/scianimator.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="/assets/themes/dinky/js/jquery.scianimator.min.js"></script>
+    
+    
+    <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header"><a href="/">Vistat</a></h1>
+        <p class="header">a reproducible gallery of statistical graphics</p>
+        <ul>
+          
+          
+          
+
+
+  
+    
+      
+      	
+      	<li><a href="/about.html">About</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/archive.html">Archive</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/categories.html">Categories</a></li>
+      	
+      
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/tags.html">Tags</a></li>
+      	
+      
+    
+  
+
+
+
+          <li><a href="/feed/">RSS</a></li>
+        </ul>
+        
+        
+        <div class="misc vcard">
+          <h4>contact</h4>
+          <ul>
+            
+            <li class="contact"><address><span class="fn email">vis@supstat.com</span></address></li>
+            
+            
+            <li class="github"><a href="http://github.com/supstat/" rel="me">github.com/supstat</a></li>
+            
+            
+            <li class="twitter"><a href="http://twitter.com/supstat/" rel="me">twitter.com/supstat</a></li>
+            
+            
+            <li class="weibo"><a href="http://weibo.com/supstat/" rel="me">weibo.com/supstat</a></li>
+            
+          </ul>
+        </div><!-- misc -->
+        
+      </header>
+
+      <section>
+      
+<section>
+  <h1>The Bean Machine and the Central Limit Theorem</h1>
+  <ul class="author">
+  
+    <li>
+    <a href="http://lijiayu.net">Lijia Yu</a>
+      (yu<span>@</span>lijiayu.net / <a href="https://github.com/yulijia">GitHub</a>
+       / <a href="http://twitter.com/YuLijia">Twitter</a>) A master candidate majoring in Bioinformatics at Beijing Institute of Genomics.
+
+    </li>
+  
+  </ul>
+  
+<p>The bean machine, also known as the quincunx or Galton box, is a device invented by Sir <a href="http://en.wikipedia.org/wiki/Francis_Galton">Francis
+Galton</a> to demonstrate the <a href="http://en.wikipedia.org/wiki/Central_limit_theorem">Central Limit
+Theorem</a>, in particular that the Normal
+distribution is approximated from the Binomial distribution, or properly speaking, <a href="http://en.wikipedia.org/wiki/De_Moivre%E2%80%93Laplace_theorem">de
+Moivre–Laplace theorem</a>.</p>
+
+<p>The function <code>quincunx()</code> in the <a href="http://yihui.name/animation"><strong>animation</strong> package</a> shows you how
+balls bounce left and right as they hit the pins. You can see the height of ball columns in the
+bins approximates a <a href="http://en.wikipedia.org/wiki/Normal_distribution">bell curve</a>.</p>
+
+<div class="highlight"><pre><code class="r">library<span class="p">(</span>animation<span class="p">)</span>
+ani.options<span class="p">(</span>interval <span class="o">=</span> <span class="m">0.03</span><span class="p">,</span> nmax <span class="o">=</span> <span class="m">213</span><span class="p">)</span>
+quincunx<span class="p">()</span>
+</code></pre></div>
+
+<div class="scianimator">
+<div id="bean_machine" style="display: inline-block;">
+</div>
+</div>
+<script type="text/javascript">
+  (function($) {
+    $(document).ready(function() {
+      var imgs = Array(212);
+      for (i=0; ; i++) {
+        if (i == imgs.length) break;
+        imgs[i] = "http://isu.r-forge.r-project.org/vistat/2013-04-13-bean-machine/bean-machine" + (i + 1) + ".png";
+      }
+      $("#bean_machine").scianimator({
+          "images": imgs,
+          "delay": 50,
+          "controls": ["first", "previous", "play", "next", "last", "loop", "speed"],
+      });
+      $("#bean_machine").scianimator("play");
+    });
+  })(jQuery);
+</script>
+
+
+  <div class="meta">
+    <h3>Meta</h3>
+    Keywords:
+    <ul class="tag_box inline">
+        
+      
+
+
+  
+     
+    	<li><a href="/tags.html#Bean machine-ref">Bean machine <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#Central Limit Theorem-ref">Central Limit Theorem <span>2</span></a></li>
+    
+  
+
+
+
+    </ul>
+    Categories:
+    <ul class="tag_box inline">
+      
+      
+
+
+  
+     
+    	<li><a href="/categories.html#animation-ref">
+    		animation <span>9</span>
+    	</a></li>
+     
+    	<li><a href="/categories.html#probability-ref">
+    		probability <span>5</span>
+    	</a></li>
+    
+  
+
+
+    </ul>
+    
+    Reviewer:
+    <ul class="tag_box inline">
+    
+      <li><a href="http://yihui.name">Yihui Xie</a></li>
+    
+    </ul>
+    
+    You can find the R Markdown source document in the <a href="https://github.com/supstat/vistat/tree/gh-pages/_source/2013-04-13-bean-machine.Rmd">vistat repository</a> on GitHub.
+  </div>
+  
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'vistat'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+</section>
+<script type="text/javascript">
+document.onkeydown = function(e) {
+  if (e.target.nodeName.toUpperCase() != 'BODY') return;
+  var url = false;
+  if (e.which == 37 || e.which == 74) {  // Left arrow and J
+  
+  url = '/2013/04/plotting-symbols-and-color-palettes';
+  
+  } else if (e.which == 39 || e.which == 75) {  // Right arrow and K
+  
+  url = '/2013/04/central-limit-theorem';
+  
+  }
+  if (url) {
+      window.location = url;
+  }
+};
+</script>
+
+
+      </section>
+      <div class="banner"><a href="https://github.com/supstat/vistat"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a></div>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+  </body>
+</html>
+
