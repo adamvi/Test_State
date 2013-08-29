@@ -1,5 +1,4 @@
 markdown: kramdown
-pygments: true
 permalink: /posts/:title/:categories
 pygments: true
 url: https://github.com/adamvi/Test_State
