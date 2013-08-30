@@ -3,9 +3,7 @@ permalink: /posts/:title/:categories
 pygments: true
 url: https://github.com/adamvi/Test_State
 
-# Themes are encouraged to use these universal variables 
-# so be sure to set them if your theme uses them.
-#
+
 title : Washington State SGP Analyses
 tagline: Resources and Documentation
 author :
@@ -13,58 +11,80 @@ author :
   email : http://www.nciea.org
   github : CenterForAssessment
   
-navbar:
-  - name: Resources
-    menu: true
-    - label: Annual Analysis Reports <b class="caret"></b>
-      submenu: true
-      - label: School Year 2011-12
-        link:  Washington_SGP_Analysis_2012.html
-      - label: School Year 2012-13
-        link:  404.html
-    - label: OSPI Documentation <b class="caret"></b>
-      submenu: true
-      - label: SGP Business Rules
-        link:  http://www.k12.wa.us/Assessment/pubdocs/BusinessRulesforCalculationofWashingtonSGP.pdf
-    - label: FAQ
-      link:  FAQ.html
+navbar: 
+  - 
+    name: Resources
+    menu: 
+      - 
+        label: Annual Analysis Reports <b class='caret'></b>
+        submenu: 
+          - 
+            label: School Year 2011-12
+            link: Washington_SGP_Analysis_2012.html
+          - 
+            label: School Year 2012-13
+            link: 404.html
+      - 
+        label: OSPI Documentation <b class='caret'></b>
+        submenu: 
+          - 
+            label: SGP Business Rules
+            link: http://www.k12.wa.us/Assessment/pubdocs/BusinessRulesforCalculationofWashingtonSGP.pdf
+      - 
+        label: FAQ
+        link: FAQ.html 
 
-  - name: Technical Documentation
-    menu: true
-    - label: The Washington Growth Model
-      link:  Washington_SGP_Model.html
-    - label: Published Articles <b class="caret"></b>
-      submenu: true
-      - label: EMIP 2009
-        link:  404.html
-    - label: White Papers
-      submenu: true
-      - label: The SGP Method
-        link:  404.html
+  - 
+    name: Technical Documentation
+    menu: 
+      - 
+        label: The Washington Growth Model
+        link: Washington_SGP_Model.html 
+      - 
+        label: Published Articles <b class='caret'></b>
+        submenu: 
+          - 
+            label: EMIP 2009
+            link:  404.html
+      - 
+        label: White Papers
+        submenu: 
+          - 
+            label: The SGP Method
+            link: 404.html
 
-  - name: How It Works
-    menu: true
-    - label: Analytic Software <b class="caret"></b>
-      submenu: true
-      - label: R and the SGP Package
-        link:  404.html
-      - label: SGP Demonstrations
-        link:  404.html
-    - label: Data Prep and Structure
-      link:  X.pdf
-    - label: Presentations & Trainings <b class="caret"></b>
-      submenu: true
-      - label: SGP Primer
-        link:  404.html
-      - label: NCME Presentation
-        link:  404.html
+  -
+    name: How it Works 
+    menu: 
+      - 
+        label: Analytic Software <b class='caret'></b>
+        submenu:
+          - 
+            label: R and the SGP Package
+            link: 404.html
+          - 
+            label: SGP Demonstrations
+            link: 404.html
+      - 
+        label: Data Prep and Structure
+        link: X.pdf
+      - 
+        label: Presentations & Trainings <b class='caret'></b>
+        submenu: 
+          - 
+            label: SGP Primer
+            link: 404.html
+          - 
+            label: NCME Presentation
+            link: 404.html
 
-  - name: About Us
+  -
+    name: About Us 
     link: 404.html
 
-  - name: Contact Us
+  -
+    name: Contact Us 
     link: 404.html
-
 
   # Special section for CFA theme - 'footer social' 
   # Puts social icons/links into each "post" footer section along with the copyright info.

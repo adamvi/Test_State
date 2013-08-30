@@ -69,10 +69,10 @@
 				                    <ul class="nav">
 				                      {% for item in site.navbar %}
 				  					    <li  {% if item.name == page.title %} class="active" {% endif %} >
-				                        <a href="{{item.link}}">
-				                           {{item.name}} 
-				  			 			 {% if item.menu != null %}
-				  						 <b class="caret"></b>
+				                        <a href="{{ item.link }}">
+				                           {{ item.name }} 
+				  			 		     {% if item.menu != null %}
+				  				           <b class="caret"></b>
 				  			 			 {% endif %}
 				                        </a>
 				  		 			  {% if item.menu != null %}
