@@ -1594,11 +1594,10 @@ button::-moz-focus-inner {
   /* Vertical Nav bar*/
   
   #sidebar {
-    margin-left: 0px;
     position: absolute;
+	float: left;
+    margin-left: 0px;
     top: 120px;
-    bottom: 0px;
-    min-height: 100%;
   }
 
   #sidebar > .nav > .nav-menu > a {
@@ -1607,4 +1606,33 @@ button::-moz-focus-inner {
     padding: 20px;
   }
 
-  
+
+  .navbar .btn-navbar {
+      margin-left: 2px;
+      margin-right: 2px;
+  }
+  .navbar .btn-navbar {
+      background-color: #47a1a1;
+      background-image: none;
+      background-repeat: repeat-x;
+      border-color: none;
+      box-shadow: none;
+      color: #eff0e9;
+      float: left;
+      padding: 7px 10px;
+      text-shadow: 0 0px 0 rgba(0, 0, 0, 0.0);
+      border-width: 0;
+      border-radius: 2px;
+  }
+  .navbar .btn-navbar:hover{
+      background-color: #47a1a1;
+      box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3) inset;
+      -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3) inset;
+  }
+  .navbar .btn-navbar:active{
+      box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3) inset;
+      -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3) inset;
+  }
+  .btn-navbar i {
+      color: #eff0e9;
+  }
