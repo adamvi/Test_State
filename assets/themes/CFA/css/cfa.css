@@ -1599,7 +1599,6 @@ button::-moz-focus-inner {
 
   .cfa-contact {
     height: 500px;
-    background-image: url('/assets/themes/CFA/images/CFA/CFA_LearningTree_Opaque_Small.png');
     background-repeat: no-repeat;
     background-position: top center;
   }
