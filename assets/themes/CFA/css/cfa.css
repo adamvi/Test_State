@@ -86,10 +86,11 @@ sub {
 }
 body {
   margin: 0;
-  font-family: "Avenir Next Thin", Arial, sans-serif;
-  font-size: 20px;
-  line-height: 35px;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 1.231;
 }
+
 a {
   color: #3290d8;
   text-decoration: none;
