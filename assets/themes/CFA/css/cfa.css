@@ -1572,7 +1572,7 @@ button::-moz-focus-inner {
       text-align: center;
       position: relative;
       overflow: hidden;
-	  margin-top: 76px;
+	  margin-top: 80px;
   }
   .page-title h2{
       display: inline-block;
@@ -1590,6 +1590,21 @@ button::-moz-focus-inner {
       right: 15%
   }
 
+  .contact {
+	  font-size: 24px;
+	  text-shadow: 1px 1px #424242;
+      text-align: center;
+	  line-height: 25px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+
+  .cfa-contact {
+    height: 500px;
+    background-image: url('/assets/themes/CFA/images/CFA/CFA_LearningTree_Opaque_Small.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
 
   /* Vertical Nav bar*/
   
