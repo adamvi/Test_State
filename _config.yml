@@ -132,7 +132,7 @@ navbar:
         submenu: 
           - 
             label:  Norm- and criterion-referenced student growth.<br> Betebenner, EMIP 2009
-            link:  resources/Betebenner_EMIP_2009.pdf
+            link: https://github.com/CenterForAssessment/SGP_Resources/blob/master/articles/Betebenner_EMIP_2009.pdf?raw=true
       - 
         label: White Papers
         submenu: 
@@ -173,7 +173,7 @@ navbar:
         submenu:
           - 
             label: SGP Package Primer
-            link: resources/sgpPrimer.pdf
+            link: https://github.com/CenterForAssessment/SGP_Resources/blob/master/manuals/sgpPrimer.pdf?raw=true
           - 
             label: SGP Demonstrations
             link: 404.html
@@ -185,13 +185,13 @@ navbar:
         submenu: 
           - 
             label: R and the SGP Package
-            link: resources/R+SGP_Package.pdf
+            link: https://github.com/CenterForAssessment/SGP_Resources/blob/master/presentations/R+SGP_Package.pdf?raw=true
           - 
             label: NCME Presentation
             link: 404.html
           - 
             label: Adequate Growth <br> (Catch Up & Keep Up)
-            link: resources/Catch_Up_Keep_Up.pdf
+            link: https://github.com/CenterForAssessment/SGP_Resources/blob/master/presentations/Catch_Up_Keep_Up.pdf?raw=true
 
   -
     name: About Us 
